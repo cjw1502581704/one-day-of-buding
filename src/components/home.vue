@@ -6,8 +6,8 @@
           default-active="2"
           background-color="#545c64"
           text-color="#fff"
-          active-text-color="#ffd04b">
-          <el-menu-item :index="'/'+calender">
+          active-text-color="#ffd04b" router>
+          <el-menu-item index="/calender">
             <i class="el-icon-menu"></i>
             布丁的日程表</el-menu-item>
         </el-menu>
