@@ -13,6 +13,7 @@ const routes = [
   {
     path: '/home',
     component: Home,
+    redirect: '/calender',
     children: [
       { path: '/calender', component: Calender }
     ]

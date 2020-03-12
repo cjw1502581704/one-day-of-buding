@@ -102,8 +102,8 @@ export default {
     background-color: #000 ;
     position: absolute;
     top: 100px;
-    left: 300px;
-    width: calc(100% - 600px);
+    left: 400px;
+    width: calc(100% - 800px);
     height: calc(100% - 260px);
     z-index: 6;
     box-sizing: border-box;

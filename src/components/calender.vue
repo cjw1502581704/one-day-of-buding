@@ -71,6 +71,9 @@ export default {
   },
   methods: {
     addEvent () {
+      if (this.newInput.trim().length === 0) {
+        return this.$message.warning('写点什么吧？')
+      }
       const newEvent = {
         id: this.nextId++,
         info: this.newInput,

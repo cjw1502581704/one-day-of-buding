@@ -123,6 +123,7 @@ export default {
     }
   }
   .input{
+    font-family: "montserrat";
     width: 380px;
     height: 30px;
     border: none;
