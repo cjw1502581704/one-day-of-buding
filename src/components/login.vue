@@ -13,15 +13,19 @@
                  :rules="formRules" class="login_Form">
           <!--        用户名-->
           <el-form-item prop="username">
-            <el-input v-model="form.username"
-                      prefix-icon="iconfont icon-user">
-            </el-input>
+            <i class="el-icon-user"></i>
+            <input type="text" class="input" v-model="form.username">
+<!--            <el-input v-model="form.username"-->
+<!--                      prefix-icon="iconfont icon-user">-->
+<!--            </el-input>-->
           </el-form-item>
           <!--        密码-->
           <el-form-item prop="password">
-            <el-input v-model="form.password"
-                      prefix-icon="iconfont icon-password">
-            </el-input>
+            <i class="el-icon-lock"></i>
+            <input type="password" class="input" v-model="form.password">
+<!--            <el-input v-model="form.password"-->
+<!--                      prefix-icon="iconfont icon-password">-->
+<!--            </el-input>-->
           </el-form-item>
           <!--        按钮-->
           <el-form-item>
@@ -102,14 +106,48 @@ export default {
 
 <style lang="less" scoped>
   .login_container {
-    background: url("../assets/img/f5q9.jpg") no-repeat fixed ;
+    background-image:linear-gradient(125deg,#2c3e50,#27ae60,#2980b9,#e74c3c,#8e44ad);
+    background-size: 400%;
+    animation: bganimation 15s infinite;
     height: 100%;
+  }
+  @keyframes bganimation {
+    0%{
+      background-position: 0% 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0% 50%;
+    }
+  }
+  .input{
+    width: 380px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #eeeeee;
+    background:rgba(0,0,0,0.0);
+    outline: none;
+    padding-left: 30px;
+    color: #ffffff;
+  }
+  .el-icon-user, .el-icon-lock {
+    color:#ffffff;
+    position: absolute;
+    top:10px;
+  }
+  .el-form-item {
+    position: relative;
+  }
+  .el-button{
+    border-radius: 20px;
   }
 
   .login_box {
     width: 450px;
     height: 300px;
-    background: #ffffff;
+    background: rgba(0,0,0,0.5);
     border-radius: 5px;
     position: absolute;
     left: 50%;
