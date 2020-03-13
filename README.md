@@ -1,24 +1,3 @@
 # buding_calendar
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## bding是一只可爱猫，这个项目目前制作了有趣的登陆页面和一个布丁的日程表，后续我要给bding做些什么呢？
